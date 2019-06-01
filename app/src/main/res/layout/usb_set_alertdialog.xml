@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="波特率："/>
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/baudrate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ></androidx.appcompat.widget.AppCompatSpinner>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="数据位："/>
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/databit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></androidx.appcompat.widget.AppCompatSpinner>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="停止位："/>
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/stopbit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></androidx.appcompat.widget.AppCompatSpinner>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="校验位："/>
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/parity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></androidx.appcompat.widget.AppCompatSpinner>
+</LinearLayout>

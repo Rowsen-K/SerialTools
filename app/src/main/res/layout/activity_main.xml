@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<com.qmuiteam.qmui.widget.QMUIViewPager
+    android:id="@+id/vp"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"></com.qmuiteam.qmui.widget.QMUIViewPager>
+    <RadioGroup
+        android:id="@+id/group"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:theme="@style/QMUI">
+        <RadioButton
+            android:id="@+id/elec"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:button="@null"
+            android:drawableTop="@drawable/elec"
+            android:paddingTop="5dp"
+            android:text="电气"/>
+        <RadioButton
+            android:id="@+id/gear"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:button="@null"
+            android:drawableTop="@drawable/gear"
+            android:paddingTop="5dp"
+            android:text="轮机"/>
+        <RadioButton
+            android:id="@+id/contruct"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:button="@null"
+            android:drawableTop="@drawable/construct"
+            android:paddingTop="5dp"
+            android:text="船体"/>
+    </RadioGroup>
+</LinearLayout>

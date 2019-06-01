@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="360dp"
+    android:layout_height="300dp">
+<TextView
+    android:id="@+id/title"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:text="解析结果"
+    android:textSize="28sp"
+    android:gravity="center"
+    android:background="@color/qmui_config_color_blue"/>
+
+    <TextView
+        android:id="@+id/label1"
+        android:layout_width="66dp"
+        android:layout_height="45dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_below="@id/title"
+        android:text="经度：" />
+
+    <TextView
+        android:id="@+id/latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_below="@id/title"
+        android:layout_toRightOf="@id/label1" />
+    <TextView
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="1.6dp"
+        android:background="@color/qmui_config_color_blue"
+        android:layout_below="@id/label1"/>
+    <TextView
+        android:id="@+id/label2"
+        android:layout_width="66dp"
+        android:layout_height="45dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_below="@id/line1"
+        android:text="纬度：" />
+
+    <TextView
+        android:id="@+id/longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_below="@id/line1"
+        android:layout_toRightOf="@id/label2" />
+
+    <TextView
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="1.6dp"
+        android:background="@color/qmui_config_color_blue"
+        android:layout_below="@id/label2"/>
+    <TextView
+        android:id="@+id/label3"
+        android:layout_width="66dp"
+        android:layout_height="45dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_below="@id/line2"
+        android:text="SOG：" />
+
+    <TextView
+        android:id="@+id/sog"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_below="@id/line2"
+        android:layout_toRightOf="@id/label3" />
+
+    <TextView
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="1.6dp"
+        android:background="@color/qmui_config_color_blue"
+        android:layout_below="@id/label3"/>
+    <TextView
+        android:id="@+id/label4"
+        android:layout_width="66dp"
+        android:layout_height="45dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_below="@id/line3"
+        android:text="COG：" />
+
+    <TextView
+        android:id="@+id/cog"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_below="@id/line3"
+        android:layout_toRightOf="@id/label4" />
+    <TextView
+        android:id="@+id/line4"
+        android:layout_width="match_parent"
+        android:layout_height="1.6dp"
+        android:background="@color/qmui_config_color_blue"
+        android:layout_below="@id/label4"/>
+    <TextView
+        android:id="@+id/label5"
+        android:layout_width="66dp"
+        android:layout_height="45dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="时间："
+        android:layout_below="@id/line4"/>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_toRightOf="@id/label5"
+        android:layout_below="@id/line4"/>
+</RelativeLayout>

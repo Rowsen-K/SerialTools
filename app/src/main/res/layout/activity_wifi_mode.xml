@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WifiActivity"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+            <EditText
+                android:id="@+id/host_ip"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="0.0.0.0"
+                android:textSize="23sp"
+                android:gravity="center"
+                />
+            <EditText
+                android:id="@+id/listen_port"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:hint="请输入守听的端口" />
+        </LinearLayout>
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:id="@+id/connect"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+           android:layout_margin="3dp"
+            android:text="连接"
+            app:qmui_radius="6dp"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical"
+        android:layout_margin="6dp"
+        />
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+        android:id="@+id/clear"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:qmui_radius="6dp"
+        android:layout_margin="8dp"
+        android:text="清空文本区"
+        />
+</LinearLayout>

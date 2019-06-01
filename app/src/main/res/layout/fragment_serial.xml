@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/elec_header"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:columnCount="3"
+        android:rowCount="2">
+
+        <RadioButton
+            android:id="@+id/wifi"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/wifi"
+            android:gravity="center"
+            android:paddingTop="36dp"
+            android:text="wifi串口" />
+
+        <RadioButton
+            android:id="@+id/usb"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/usb"
+            android:gravity="center"
+            android:paddingTop="36dp"
+            android:text="usb串口" />
+
+        <RadioButton
+            android:id="@+id/bluetooth"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/bluetooth"
+            android:gravity="center"
+            android:paddingTop="36dp"
+            android:text="蓝牙串口" />
+
+        <RadioButton
+            android:id="@+id/func4"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/lock"
+            android:gravity="center"
+            android:paddingTop="36dp"
+            android:text="待开发" />
+
+        <RadioButton
+            android:id="@+id/func5"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/lock"
+            android:gravity="center"
+            android:paddingTop="36dp"
+            android:text="待开发" />
+
+        <RadioButton
+            android:id="@+id/func6"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/lock"
+            android:gravity="center"
+            android:paddingTop="36dp"
+            android:text="待开发" />
+    </GridLayout>
+</LinearLayout>
